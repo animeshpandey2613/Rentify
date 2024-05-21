@@ -76,8 +76,8 @@ function Blocks() {
                   <div className="info">{ele.address}</div>
                 </div>
                 <div className="pair">
-                  <div className="label">Address:</div>
-                  <div className="info">{ele.address}</div>
+                  <div className="label">Landmark:</div>
+                  <div className="info">{ele.landmark}</div>
                 </div>
                 <div className="buttonArea">
                   <div

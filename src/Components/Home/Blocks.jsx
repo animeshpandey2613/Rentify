@@ -13,7 +13,7 @@ function Blocks() {
   useEffect(() => {
     const fetchData = CatchAsyncError(async () => {
       try {
-        const data = await axios.get("http://localhost:8000/api/property");
+        const data = await axios.get("https://rainbow-sunflower-70fdd9.netlify.app/api/property");
         setBlocksData(data.data.data);
         // setLoading(true);
         console.log(blocksData);
@@ -42,7 +42,7 @@ function Blocks() {
         phoneNumberUser2: owner.ownerNumber,
       };
       await axios.post(
-        "http://localhost:8000/api/users/contactuser",
+        "https://rainbow-sunflower-70fdd9.netlify.app/api/users/contactuser",
         temp
       );
   

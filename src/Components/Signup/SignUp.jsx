@@ -25,7 +25,7 @@ export default function Login({ setLoggedIn, loggedIn }) {
     e.preventDefault();
     // console.log(Input);
     const resp = await axios.post(
-      "http://localhost:8000/api/users/signup",
+      "https://rainbow-sunflower-70fdd9.netlify.app/api/users/signup",
       Input
     );
     localStorage.setItem("Authentication", resp.data.token);

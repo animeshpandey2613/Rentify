@@ -42,7 +42,7 @@ function PropertyForm() {
     // });
     const ownerNumber = localStorage.getItem("phoneNumber");
     const temp = { ...formData, ownerNumber };
-    const data = await axios.post("http://localhost:8000/api/property", temp);
+    const data = await axios.post("https://rainbow-sunflower-70fdd9.netlify.app/api/http://localhost:8000/api/property", temp);
     console.log(data);
     setFormData({
       phoneNumber: "",

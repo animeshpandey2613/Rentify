@@ -1,0 +1,46 @@
+.Navbarcontainer {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(201, 201, 201, 0.2);
+}
+.Navbarheading {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  margin-left: 10px;
+}
+.NavbarlogoArea {
+  display: flex;
+  align-items: center;
+}
+.NavbarimageArea {
+  height: 40px;
+}
+.NavbarimageLogo {
+  height: 100%;
+  object-fit: contain;
+}
+.NavbarleftArea{
+    margin-right: 50px;
+    display: flex;
+    gap: 40px;
+}
+.button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px grey solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+    &:hover{
+        background-color: grey;
+        transform: scale(1.1);
+        color: white;
+    }
+}

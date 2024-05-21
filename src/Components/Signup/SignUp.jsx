@@ -7,7 +7,6 @@ import {
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import { CiMail } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import { FaRegEyeSlash } from "react-icons/fa";
 import axios from "axios";

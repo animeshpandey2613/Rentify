@@ -2,7 +2,17 @@ import React, { useState } from "react";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 function Search() {
   const handleSubmit = () => {};
-  const handleChange = () => {};
+  const handleChange = () => {
+    setSidebardata({
+      searchTerm: "",
+      type: "all",
+      parking: false,
+      furnished: false,
+      offer: false,
+      sort: "created_at",
+      order: "desc",
+    });
+  };
   const [sidebardata, setSidebardata] = useState({
     searchTerm: "",
     type: "all",

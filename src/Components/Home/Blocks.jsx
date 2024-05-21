@@ -24,7 +24,7 @@ function Blocks() {
       }
     });
     fetchData();
-  }, []);
+  }, [blocksData]);
   const OwnerSendEmail = CatchAsyncError(async (owner) => {
     if(localStorage.getItem("phoneNumber")){
       Swal.fire({
@@ -41,7 +41,7 @@ function Blocks() {
         phoneNumberUser1: localStorage.getItem("phoneNumber"),
         phoneNumberUser2: owner.ownerNumber,
       };
-      const data = await axios.post(
+      await axios.post(
         "http://localhost:8000/api/users/contactuser",
         temp
       );
